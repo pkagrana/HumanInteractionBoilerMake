@@ -1,8 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffd4f8ff">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="sendMessage"
+            android:text="Add Survey"
+            android:layout_below="@+id/textSurvey"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="45dp">
+
+        </Button>
+
+        <EditText
+            android:id="@+id/textSurvey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/yourTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/testOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Survey"
+            />
+        <TextView
+            android:id="@+id/testTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Organic Food"
+            />
+        <TextView
+            android:id="@+id/testThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Which laptop"
+            />
+
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView1"
+        android:clickable="true"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_marginBottom="50px"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffd4f8ff">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="sendMessage"
+                android:text="Add Survey"
+                android:layout_below="@+id/textSurvey"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="45dp">
+
+            </Button>
+
+            <EditText
+                android:id="@+id/textSurvey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:layout_below="@+id/textView"
+                android:layout_alignParentStart="true"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/yourTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/testOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Survey"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="fill_parent"
+    android:background="#ffd4f8ff">
 
     <ScrollView
         android:id="@+id/scrollView1"
@@ -18,9 +140,34 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:onClick="sendMessage"
-            android:text="Add">
+            android:text="Add Survey"
+            android:layout_below="@+id/textSurvey"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="45dp">
 
         </Button>
+
+        <EditText
+            android:id="@+id/textSurvey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/yourTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/testOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Survey"
+            />
     </ScrollView>
 
    >
@@ -29,71 +176,9 @@
 
 
 
-    <!--
-    <?xml version="1.0" encoding="utf-8"?>
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content" >
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:orientation="vertical" >
-
-            <Button
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:text="Button 1" />
-
-            <Button
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:text="Button 2" />
-
-            <Button
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:text="Button 3" />
-
-            <Button
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:text="Button 4" />
-            <Button
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:text="Button 5" />
-            <Button
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:text="Button 6" />
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button 7" />
-            <Button
-                android:id="@+id/button4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button 8" />
-            <Button
-                android:id="@+id/button1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button 10" />
-            <Button
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:text="Button 11" />
-
-        </LinearLayout>
-    </ScrollView>
-
-    -->
 
 
-<!--
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -108,11 +193,11 @@
         android:textAlignment="center"
         android:text="Select a survey"
         android:textSize="32sp"
-        android:id="@+id/textView" /> 
+        android:id="@+id/textView" />
 
-    
-    
-    
+
+
+
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
@@ -129,7 +214,7 @@
 
     </ScrollView>
 
-    
+
 
 
 

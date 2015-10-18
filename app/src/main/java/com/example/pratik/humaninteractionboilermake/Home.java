@@ -8,17 +8,30 @@ import android.view.LayoutInflater;
 import android.widget.ScrollView;
 import android.widget.LinearLayout;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.EditText;
+import android.widget.Button;
 import android.content.Intent;
+import android.util.Log;
 
+import java.util.ArrayList;
+import java.util.Random;
 
 public class Home extends Activity {
+
+    private ArrayList<String> surveys = new ArrayList<>();
+    EditText mEdit;
+    TextView mText;
+    Button   mButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+
     }
 
     @Override
@@ -26,6 +39,7 @@ public class Home extends Activity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_home, menu);
         return true;
+
     }
 
     @Override
@@ -43,30 +57,5 @@ public class Home extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void sendMessage(View view) {
-        Intent intent = new Intent(Home.this, UserEntersSurvey.class);
-        startActivity(intent);
-    }
-    public void addElement () {
-        LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View v = inflater.inflate(R.layout.activity_home, null);
 
-        // Find the ScrollView
-        ScrollView sv = (ScrollView) v.findViewById(R.id.scrollView1);
-
-        // Create a LinearLayout element
-        LinearLayout ll = new LinearLayout(this);
-        ll.setOrientation(LinearLayout.VERTICAL);
-
-        // Add text
-        TextView tv = new TextView(this);
-        tv.setText("my text");
-        ll.addView(tv);
-
-        // Add the LinearLayout element to the ScrollView
-        sv.addView(ll);
-
-        // Display the view
-        setContentView(v);
-    }
 }
